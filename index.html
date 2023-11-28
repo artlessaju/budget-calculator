@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+     
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./style.css"> 
+</head>
+
+<body class="border border-3 border-dark">
+   <div class="row">
+    <div id="coll" class="col" style="width: 100;"><h1 style="color:beige; ">BUDGET CALCULATOR</h1></div>
+   </div>
+    
+<div class="row">
+        <div class="col-3"></div>
+        <div class="col-5 m-5">
+            <div style="background-color: navy;color:beige; border-radius:10px; height: 40px;text-align: center;margin-top: 40px;padding-top: 10px; margin-bottom: 10px;">Expences</div>
+            <form >
+            <input type="text" id="amt" placeholder="Salary" class="form-control mb-2 mt-2">
+            <input type="text" id="fud" placeholder="Food Expences" class="form-control mb-2 mt-2">
+            <input type="text" id="uti" placeholder="Grocery" class="form-control mb-2 mt-2">
+            <input type="text" id="insur" placeholder="Insurance" class="form-control mb-2 mt-2">
+            <input type="text" id="rent" placeholder="Rent" class="form-control mb-2 mt-2">
+            <button id="nn" onclick="budget()" type="button" class="form-control mb-2 mt-2 btn btn-success align-center">Calculate</button>
+            <button type="reset" class="form-control mb-1 btn btn-danger align-center mb-2 mt-2">Reset</button>
+            </form> 
+            <div id="result" style="background-color: #2a6965;"></div>
+            <div id="result_savings" style="background-color: rgb(40, 65, 65);"></div>
+        </div>
+        <div class="col-4"></div>
+           </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
